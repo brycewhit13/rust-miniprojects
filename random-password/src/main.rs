@@ -6,8 +6,8 @@ use clap::Parser;
 #[clap(
     version = "4.0.32",
     author = "Bryce Whitney",
-    about = "A command-line tool that generates a random password.",
-    after_help = "Example: cargo run --length 10"
+    about = "A command-line tool that generates a random password. By default it is 12 characters long",
+    after_help = "Example: cargo run -- length --characters 10"
 )]
 struct Cli {
     #[clap(subcommand)]
@@ -16,7 +16,7 @@ struct Cli {
 
 #[derive(Parser)]
 enum Commands {
-    #[clap(about = "Get a popular Rust crate")]
+    #[clap(about = "Specify the length of a passwrod")]
     Length {
         #[clap(short, long, default_value = "12")]
         characters: Option<usize>, // Determines the length of the password
