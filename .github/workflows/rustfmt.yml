@@ -16,3 +16,4 @@ jobs:
           override: true
       - name: Run rustfmt
         run: cargo fmt --quiet
+        working-directory: random-password

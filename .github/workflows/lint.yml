@@ -16,5 +16,6 @@ jobs:
           override: true
       - name: Run clippy
         run: cargo clippy --quiet
+        working-directory: random-password
   
 

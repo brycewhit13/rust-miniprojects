@@ -16,4 +16,5 @@ jobs:
           override: true
       - name: Run tests
         run: cargo test --quiet
+        working-directory: random-password
   

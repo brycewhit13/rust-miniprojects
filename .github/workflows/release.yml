@@ -16,4 +16,5 @@ jobs:
           override: true
       - name: Run release
         run: cargo build --release
+        working-directory: random-password
   
