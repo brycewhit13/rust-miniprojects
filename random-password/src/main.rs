@@ -20,7 +20,7 @@ enum Commands {
     Length {
         #[clap(short, long, default_value = "12")]
         characters: Option<usize>, // Determines the length of the password
-    }
+    },
 }
 
 fn main() {
@@ -32,8 +32,7 @@ fn main() {
                 println!("Password must be at least three characters. Defaulting to a 3 character password!");
                 let password: String = random_password::generate_password(3);
                 println!("Password: {}", password);
-            }
-            else{
+            } else {
                 let password: String = random_password::generate_password(characters.unwrap());
                 println!("Password: {}", password);
             }

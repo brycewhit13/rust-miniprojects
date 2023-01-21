@@ -33,7 +33,7 @@ pub fn generate_password(length: usize) -> String {
     let remaining_pass: String = (0..length - 3)
         .map(|_| {
             let rand_idx = rng.gen_range(0..char_vec.len());
-            return char_vec[rand_idx] as char;
+            char_vec[rand_idx]
         })
         .collect();
 
@@ -49,5 +49,5 @@ pub fn generate_password(length: usize) -> String {
         _ => format!("{}{}{}{}", capital_letter, number, symbol, remaining_pass), // May not be possible to get
     };
 
-    return password;
+    password
 }
