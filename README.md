@@ -1,4 +1,4 @@
-![worflow status](https://github.com/github/docs/actions/workflows/rust.yml/badge.svg)
+![worflow status](https://github.com/brycewhit13/rust-miniprojects/actions/workflows/rust.yml/badge.svg)
 
 # rust-miniprojects
 ## Motivation
