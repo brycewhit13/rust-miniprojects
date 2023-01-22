@@ -14,8 +14,10 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
           override: true
-      - name: Run clippy
-        run: make all
-        working-directory: random-password
-  
+      - name: Formatting
+        run: make format
+      - name: Linting
+        run: make lint
+      - name: Testing
+        run: make test  
 
