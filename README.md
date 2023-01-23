@@ -1,3 +1,5 @@
+![worflow status](https://github.com/brycewhit13/rust-miniprojects/actions/workflows/rust.yml/badge.svg)
+
 # rust-miniprojects
 ## Motivation
 This repo is meant to track my progress as I develop my rust skills starting from nothing. The goal is to add a new CLI project developed in rust every week. Below is a list of all the projects I have completed so far and a short description of what it does.
