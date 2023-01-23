@@ -2,7 +2,7 @@
 By default the password is 8 characters long */
 
 // Import rand crate
-use rand::{self, Rng};
+use rand::{self, rngs::ThreadRng, Rng};
 
 // Establish possible numbers, letters, and symbols in a password
 const NUMBERS: &str = "0123456789";
@@ -38,6 +38,13 @@ pub fn generate_password(length: usize) -> String {
         .collect();
 
     // Combine the results and return the password
+    let password: String = shuffle_password(capital_letter, symbol, number, remaining_pass, rng);
+
+    // return the password
+    password
+}
+
+fn shuffle_password(capital_letter: char, symbol: char, number: char, remaining_pass: String, mut rng: ThreadRng,) -> String {
     // Randomize the order so there is some variation with where the symbols and capital letters appear
     let password: String = match rng.gen_range(0..6) {
         0 => format!("{}{}{}{}", remaining_pass, capital_letter, symbol, number),
@@ -48,6 +55,6 @@ pub fn generate_password(length: usize) -> String {
         5 => format!("{}{}{}{}", remaining_pass, number, symbol, capital_letter),
         _ => format!("{}{}{}{}", capital_letter, number, symbol, remaining_pass), // May not be possible to get
     };
-
+    // Return the shuffled password
     password
 }
