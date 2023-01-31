@@ -27,7 +27,7 @@ fn main() {
     let args = Cli::parse();
     match args.command {
         Some(Commands::Length { characters }) => {
-            // Minimum password is 3 characters long
+            // Minimum password length is 3 characters long
             if characters.unwrap() < 3 {
                 println!("Password must be at least three characters. Defaulting to a 3 character password!");
                 let password: String = random_password::generate_password(3);

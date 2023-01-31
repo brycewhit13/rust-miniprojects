@@ -53,7 +53,7 @@ fn shuffle_password(capital_letter: char, symbol: char, number: char, remaining_
         3 => format!("{}{}{}{}", remaining_pass, symbol, number, capital_letter),
         4 => format!("{}{}{}{}", remaining_pass, number, capital_letter, symbol),
         5 => format!("{}{}{}{}", remaining_pass, number, symbol, capital_letter),
-        _ => format!("{}{}{}{}", capital_letter, number, symbol, remaining_pass), // May not be possible to get
+        _ => format!("{}{}{}{}", capital_letter, number, symbol, remaining_pass),
     };
     // Return the shuffled password
     password
