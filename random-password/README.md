@@ -1,6 +1,6 @@
 # random-password
 ## Overview
-Generates a random password of a specified length (defaults to 12 characters) that includes at least one number, symbol, and capital letter.
+Generates a random password of a specified length (defaults to 12 characters) that includes at least one number, symbol, and capital letter. The smallest password you can generate is 3 characters long
 
 ## How to use
 1) cd into `random-password`
