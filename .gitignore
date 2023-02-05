@@ -11,3 +11,6 @@ Cargo.lock
 
 # Ignore the target folder
 target
+
+# Ignore any credentials
+credentials.cfg
