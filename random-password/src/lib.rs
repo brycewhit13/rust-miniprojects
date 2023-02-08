@@ -44,7 +44,13 @@ pub fn generate_password(length: usize) -> String {
     password
 }
 
-fn shuffle_password(capital_letter: char, symbol: char, number: char, remaining_pass: String, mut rng: ThreadRng) -> String {
+fn shuffle_password(
+    capital_letter: char,
+    symbol: char,
+    number: char,
+    remaining_pass: String,
+    mut rng: ThreadRng,
+) -> String {
     // Randomize the order so there is some variation with where the symbols and capital letters appear
     let password: String = match rng.gen_range(0..6) {
         0 => format!("{}{}{}{}", remaining_pass, capital_letter, symbol, number),
