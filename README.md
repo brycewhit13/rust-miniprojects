@@ -6,6 +6,7 @@ This repo is meant to track my progress as I develop my rust skills starting fro
 
 ## Projects
 - **currency-converter**: A CLI that takes two currencies as an input and outputs the conversion from the first currency to the second
+- **digital-clock**: A CLI that acts as a digital clock. Currently it shows your local time with hopes of expanding it to accept any timezone moving forward
 - **mouse-hacker**: A toy CLI that moves your mouse in a triangle a certian number of times. A mini-project to get used to interacting with the mouse/keyboard in Rust
 - **random-password**: A CLI that generates a random password. This password defaults to 12 characters long and always includes at least one number, symbol, and capital latter. The user can specify how short/long they want the password to be.
 
