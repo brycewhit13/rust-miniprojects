@@ -9,3 +9,6 @@ This project is a command-line tool that takes a sentence (or word) as an argume
     - NOTE: You need the quotation marks if you are using translating more than one word, otherwise it will throw an error. 
 
 If you need help or more information, please run the following command: `cargo run -- --help`
+
+## Next Steps
+- Allow the program to take a file as an input and output the translation in a different file
