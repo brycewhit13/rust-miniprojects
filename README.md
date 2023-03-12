@@ -14,6 +14,7 @@ This repo is meant to track my progress as I develop my rust skills starting fro
 - **mouse-hacker**: A toy CLI that moves your mouse in a triangle a certian number of times. A mini-project to get used to interacting with the mouse/keyboard in Rust.
 - **pig-latin**: A CLI that takes a word/sentence as an input and returns the output converted to pig latin.
 - **random-password**: A CLI that generates a random password. This password defaults to 12 characters long and always includes at least one number, symbol, and capital latter. The user can specify how short/long they want the password to be.
+- **rust-python-comparison**: A CLI that allows you to compare the speed of python and rust for a couple different tasks
 
 ## References
 
