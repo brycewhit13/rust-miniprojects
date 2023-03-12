@@ -23,8 +23,8 @@ Here are the current results for each language. Note that this was run locally s
 
 ||Python|Rust|
 |---|---|---|
-|count_to_billion()|100125 ms|63 ms|
-|load_airport_data()|11423 ms|129 ms|
+|count_to_billion()|100125 ms|11423 ms|
+|load_airport_data()|63 ms|129 ms|
 
 ## Further Improvements:
 
