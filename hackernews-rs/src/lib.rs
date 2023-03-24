@@ -1,7 +1,3 @@
-// Import crates
-use reqwest;
-use serde_json;
-
 // Constants
 const BASE_URL: &str = "https://hacker-news.firebaseio.com/v0";
 
@@ -28,7 +24,7 @@ pub async fn get_stories(query_type: QueryType, num_stories: usize) {
     let story_ids = serde_json::from_str::<Vec<u32>>(&story_ids).unwrap();
 
     // Make the request for the story link
-    for i in 0..num_stories{
+    for (i, _id) in story_ids.iter().enumerate().take(num_stories) {
         let story_url = format!("{}/item/{}.json", BASE_URL, story_ids[i]);
         let story_info = reqwest::get(story_url)
             .await

@@ -1,8 +1,7 @@
 // Import crates
-use hackernews_rs::get_stories;
-use hackernews_rs::QueryType::{NewStories, TopStories,  BestStories};
-use tokio;
 use clap::Parser;
+use hackernews_rs::get_stories;
+use hackernews_rs::QueryType::{BestStories, NewStories, TopStories};
 
 #[derive(Parser, Debug)]
 // add extended help
