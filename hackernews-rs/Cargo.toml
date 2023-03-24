@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 clap = {version="4.1.13", features=["derive"]}
 reqwest = "0.11.15"
-serde = "1.0.158"
+serde_json = "1.0.94"
 tokio = {version = "1.26.0", features = ["macros", "rt-multi-thread"]}

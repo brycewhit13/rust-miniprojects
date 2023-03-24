@@ -1,6 +1,6 @@
 // Import crates
-//use reqwest;
-//use serde;
+use reqwest;
+use serde_json;
 
 // Constants
 const BASE_URL: &str = "https://hacker-news.firebaseio.com/v0";
@@ -10,16 +10,45 @@ pub enum QueryType {
     TopStories,
     BestStories,
     NewStories,
-    JobStories,
 }
 
 // Functions
 // Make the proper request to the API
-pub async fn get_stories(query_type: QueryType) {
-    let url = format!("{}/{}", BASE_URL, get_extension(query_type));
-    
-    // TODO: Delete later after testing
-    println!("URL: {}", url);
+pub async fn get_stories(query_type: QueryType, num_stories: usize) {
+    // Make the request for the story ids
+    let id_url = format!("{}/{}", BASE_URL, get_extension(query_type));
+    let story_ids = reqwest::get(id_url)
+        .await
+        .expect("REASON")
+        .text()
+        .await
+        .unwrap();
+
+    // Convert the story_ids to a vector of u32
+    let story_ids = serde_json::from_str::<Vec<u32>>(&story_ids).unwrap();
+
+    // Make the request for the story link
+    for i in 0..num_stories{
+        let story_url = format!("{}/item/{}.json", BASE_URL, story_ids[i]);
+        let story_info = reqwest::get(story_url)
+            .await
+            .expect("REASON")
+            .text()
+            .await
+            .unwrap();
+        let story_info_json = serde_json::from_str::<serde_json::Value>(&story_info).unwrap();
+
+        // Get info from the json
+        let title = story_info_json["title"].as_str().unwrap();
+        let url = story_info_json["url"].as_str().unwrap();
+
+        // Print the results
+        println!("Article Title: {}", title);
+        println!("URL: {}", url);
+        if i != num_stories - 1 {
+            println!("\n");
+        }
+    }
 }
 
 // Get the extension depending on the QueryType
@@ -29,6 +58,5 @@ fn get_extension(query_type: QueryType) -> &'static str {
         QueryType::TopStories => "topstories.json",
         QueryType::BestStories => "beststories.json",
         QueryType::NewStories => "newstories.json",
-        QueryType::JobStories => "jobstories.json",
     }
 }
