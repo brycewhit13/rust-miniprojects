@@ -11,6 +11,7 @@ This repo is meant to track my progress as I develop my rust skills starting fro
 - [currency-converter](https://github.com/brycewhit13/rust-miniprojects/tree/main/currency-converter): A CLI that takes two currencies as an input and outputs the conversion from the first currency to the second
 - [digital-clock](https://github.com/brycewhit13/rust-miniprojects/tree/main/digital-clock): A CLI that acts as a digital clock. Currently it shows your local time with hopes of expanding it to accept any timezone moving forward.
 - [hackernews-rs](https://github.com/brycewhit13/rust-miniprojects/tree/main/hackernews-rs): A CLI that scrapes articles from Hacker News directly from your terminal
+- [int_conversion](https://github.com/brycewhit13/rust-miniprojects/tree/main/int_conversion): A CLI that takes an integer and prints the results in binary, hex, and octal.
 - [iris-classification](https://github.com/brycewhit13/rust-miniprojects/tree/main/iris-classification): A small example of comparing two decision tree models on their ability to classify the iris dataset.
 - [mouse-hacker](https://github.com/brycewhit13/rust-miniprojects/tree/main/mouse-hacker): A toy CLI that moves your mouse in a triangle a certian number of times. A mini-project to get used to interacting with the mouse/keyboard in Rust.
 - [pig-latin](https://github.com/brycewhit13/rust-miniprojects/tree/main/pig-latin): A CLI that takes a word/sentence as an input and returns the output converted to pig latin.
