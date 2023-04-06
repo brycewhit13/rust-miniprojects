@@ -9,7 +9,7 @@ This repo is meant to track my progress as I develop my rust skills starting fro
 ## Projects
 
 - [currency-converter](https://github.com/brycewhit13/rust-miniprojects/tree/main/currency-converter): A CLI that takes two currencies as an input and outputs the conversion from the first currency to the second
-- [coding-contest](https://github.com/brycewhit13/rust-miniprojects/tree/main/coding_contest): A CLI that gets current and upcoming coding competitions from different sites.
+- [coding_contest](https://github.com/brycewhit13/rust-miniprojects/tree/main/coding_contest): A CLI that gets current and upcoming coding competitions from different sites.
 - [digital-clock](https://github.com/brycewhit13/rust-miniprojects/tree/main/digital-clock): A CLI that acts as a digital clock. Currently it shows your local time with hopes of expanding it to accept any timezone moving forward.
 - [hackernews-rs](https://github.com/brycewhit13/rust-miniprojects/tree/main/hackernews-rs): A CLI that scrapes articles from Hacker News directly from your terminal
 - [int_conversion](https://github.com/brycewhit13/rust-miniprojects/tree/main/int_conversion): A CLI that takes an integer and prints the results in binary, hex, and octal.
