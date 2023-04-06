@@ -11,6 +11,7 @@ This repo is meant to track my progress as I develop my rust skills starting fro
 - [currency-converter](https://github.com/brycewhit13/rust-miniprojects/tree/main/currency-converter): A CLI that takes two currencies as an input and outputs the conversion from the first currency to the second
 - [coding_contest](https://github.com/brycewhit13/rust-miniprojects/tree/main/coding_contest): A CLI that gets current and upcoming coding competitions from different sites.
 - [digital-clock](https://github.com/brycewhit13/rust-miniprojects/tree/main/digital-clock): A CLI that acts as a digital clock. Currently it shows your local time with hopes of expanding it to accept any timezone moving forward.
+- [fibonacci](https://github.com/brycewhit13/rust-miniprojects/tree/main/fibonacci): A CLI that calculates the nth fibonacci number both iteratively and recursively.
 - [hackernews-rs](https://github.com/brycewhit13/rust-miniprojects/tree/main/hackernews-rs): A CLI that scrapes articles from Hacker News directly from your terminal
 - [int_conversion](https://github.com/brycewhit13/rust-miniprojects/tree/main/int_conversion): A CLI that takes an integer and prints the results in binary, hex, and octal.
 - [iris-classification](https://github.com/brycewhit13/rust-miniprojects/tree/main/iris-classification): A small example of comparing two decision tree models on their ability to classify the iris dataset.
